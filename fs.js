@@ -29,6 +29,7 @@ export async function deleteFile(filePath) {
   await fs.rm(filePath, { force: true });
 }
 
+
 export async function statPath(filePath) {
   const stat = await fs.stat(filePath);
   return {
